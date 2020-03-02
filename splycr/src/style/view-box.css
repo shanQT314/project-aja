@@ -1,0 +1,40 @@
+.video-box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.view-box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    flex-flow: row;
+    align-items: stretch;
+}
+
+.video {
+    width: 100%;
+    background: black;
+}
+
+@media all and (max-width: 640px) {
+    .video-box {
+        flex-direction: column-reverse;
+    }
+    .video-view-box{
+        flex-direction: row;
+    }
+
+    .video-controls {
+        align-self: flex-end;
+        flex-flow: row wrap;
+    }
+}
+
+.video-view-box div {
+    margin: 5px;
+}

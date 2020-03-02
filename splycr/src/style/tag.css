@@ -1,0 +1,63 @@
+.boxed {
+    border: 2px solid gray;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 10px;
+    padding: 5px;
+    max-width: 70%;
+}
+
+.boxed-row div, .boxed-row .form-element{
+    align-self: center;
+}
+
+.comment-info {
+    border-right: 1px solid gray;
+    padding-left: 5px;
+    padding-right: 15px;
+}
+
+.commenter-name{
+    font-size: 20px;
+}
+
+.comment-date{
+    font-size: 10px;
+}
+
+@media all and (max-width: 640px) {
+    .boxed, #new-comment-form, #comment-navigator{
+        max-width: 95%;
+    }
+
+    #comment-content{
+        min-width: 60%;
+    }
+
+    .commenter-name{
+        font-size: 12px;
+    }
+    
+    .comment-date{
+        font-size: 7px;
+    }
+}
+
+.comment-content{
+    flex-grow: 5;
+}
+
+#comment-content{
+    min-width: 30%;
+}
+
+#page-number {
+    margin: auto;
+    text-align: center;
+}

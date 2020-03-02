@@ -1,0 +1,14 @@
+.time-index-adjustment {
+    transform: scale(0.2);
+    display: flex;
+}
+.time-index-display {
+    display: flex;
+    flex-direction: row;
+    max-height: 60px;
+    max-width: 200px;
+}
+
+.time-index-display div {
+    align-self: center;
+}

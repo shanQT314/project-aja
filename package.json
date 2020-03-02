@@ -1,0 +1,46 @@
+{
+  "name": "splcyr-server",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server.js",
+    "client": "node start-client.js",
+    "postinstall": "node install-client.js",
+    "build": "node build-client.js; pkill node || true; NODE_ENV=production node server.js;"
+  },
+  "dependencies": {
+    "@google-cloud/speech": "^2.3.1",
+    "@google-cloud/storage": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "express-mongo-db": "^2.0.4",
+    "express-session": "^1.15.6",
+    "ffmpeg": "0.0.4",
+    "fluent-ffmpeg": "^2.1.2",
+    "http-errors": "^1.6.3",
+    "mocha": "^6.0.2",
+    "moment": "^2.24.0",
+    "mongodb": "^3.2.2",
+    "morgan": "~1.9.0",
+    "multer": "^1.4.1",
+    "nedb": "^1.8.0",
+    "pug": "2.0.0-beta11",
+    "tiny-worker": "^2.1.2",
+    "validator": "^10.11.0",
+    "video-stitch": "^1.6.0",
+    "worker-threads": "^1.0.0"
+  },
+  "description": "AJA Video Editor RESTful API",
+  "main": "server.js",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^4.1.0"
+  },
+  "proxy": "localhost:3001"
+}

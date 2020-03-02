@@ -1,0 +1,59 @@
+curl -X POST -H "Content-Type: application/json" -d '{"username": "admin", "password": "pass", "bio": "bio"}' http://localhost:3001/api/users
+
+curl -X PUT -H "Content-Type: application/json" -d '{"username": "admin", "password": "pass"}' http://localhost:3001/api/users/
+
+curl -X GET http://localhost:3001/api/users/:username/
+
+curl -X PATCH -H "Content-Type: application/json" -d '{"username": "admin", "password": "newpass","oldpassword": "pass"}' http://localhost:3001/api/users/
+
+curl -X DELETE http://localhost:3001/api/users/:username
+
+curl -F 'source=@test.mp4' http://localhost:3001/api/sources/12/
+
+curl -X GET  http://localhost:3001/api/sources/userid/thing
+
+curl -X GET http://localhost:3001/api/userid
+
+curl -X GET  http://localhost:3001/api/sources/videoid/thing/source
+
+curl -X DELETE http://localhost:3001/api/sources/1
+
+curl -X GET http://localhost:3000/api/sources/videoid/next
+
+curl -X GET http://localhost:3000/api/sources/videoid/next
+
+curl -X POST -H "Content-Type: application/json" -d '{"title": "First project", "effects": "[russia]","clips": ["5ca00c76fa7f5d0b6c2824c0", "5ca00c8cfa7f5d0b6c2824c1"], "container": "something", "codec": "somethingelse"}' http://localhost:3000/api/projects/admin
+
+curl -X POST -d "title=title&tags=["putin","saudi",""]&clipids=["5ca00c76fa7f5d0b6c2824c0", "5ca00c8cfa7f5d0b6c2824c1"]&container=output&codec=output" http://localhost:3000/api/projects/:userid
+
+curl -X GET  http://localhost:3001/api/projects/KdHiNamDajGl1EyG/projectid
+
+curl -X GET  http://localhost:3001/api/projects/KdHiNamDajGl1EyG/
+
+curl -X GET  http://localhost:3001/api/projects/
+
+curl -X GET  http://localhost:3001/api/projects/KdHiNamDajGl1EyG/projectid/source
+
+curl -X DELETE  http://localhost:3001/api/projects/KdHiNamDajGl1EyG/projectid
+
+curl -X DELETE  http://localhost:3001/api/projects/KdHiNamDajGl1EyG/
+
+curl -X POST -H "Content-Type: application/json" -d '{"videoid": "thing", "owner": "KdHiNamDajGl1EyG","startTime": "00:00:01","stopTime": "00:00:03", "tags": ["tag1", "tag2"]}' http://localhost:3001/api/clips
+
+curl -X PATCH -H "Content-Type: application/json" -d '{"videoid": "thing", "owner": "KdHiNamDajGl1EyG","startTime": "00:00:01","stopTime": "00:00:03", "tags": ["tag1", "tag2"]}' http://localhost:3001/api/clips
+
+curl -X GET  http://localhost:3001/api/clips/KdHiNamDajGl1EyG
+
+curl -X GET  http://localhost:3001/api/clips/
+
+curl -X GET http://localhost:3001/api/clips/1/1/1
+
+curl -X GET  http://localhost:3001/api/clip/1/source/videoname
+
+curl -X GET -H "Content-Type: application/json" -d '["russia"]' http://localhost:3001/api/search/
+
+curl -X DELETE  http://localhost:3001/api/clips/userid/videoid
+
+curl -X DELETE http://localhost:3001/api/clips/user/KdHiNamDajGl1EyG
+
+

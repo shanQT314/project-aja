@@ -1,0 +1,22 @@
+# IDE
+.vscode
+
+# Node
+db/
+node_modules/
+stitch.js
+
+# Sources
+*.mp4
+uploads/
+package-lock.json
+splycr/package-lock.json
+splycr/package-lock.json
+package-lock.json
+something.js
+thing.wav
+aja.json
+output.wav
+package-lock.json
+testing.js
+thing.js

@@ -1,0 +1,1 @@
+ssh splycr-aja 'cd project-aja/; git pull; npm run build &'

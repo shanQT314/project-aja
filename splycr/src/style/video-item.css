@@ -1,0 +1,13 @@
+.video-item {
+	margin: 15px 0 15px 0;
+}
+
+.thumbnail {
+	height: 10vw;
+	overflow: hidden;
+}
+
+.thumbnail img {
+	height: 100%;
+	width: auto;
+}

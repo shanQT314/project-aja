@@ -1,0 +1,44 @@
+{
+  "name": "splycr",
+  "version": "0.1.0",
+  "description": "A fully-featured multi-user video editor with client-side video post-processing and cloud-based storage for source files and projects.",
+  "private": true,
+  "proxy": "http://localhost:3001/",
+  "dependencies": {
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-player": "^1.10.0",
+    "react-scripts": "2.1.8"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint src"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "keywords": [
+    "video",
+    "editor",
+    "clip",
+    "splice",
+    "splycr",
+    "UTSC",
+    "CSCC09"
+  ],
+  "author": "Joe.Armitage@mail.utoronto.ca; Ahmad.Shanqiti@mail.utoronto.ca; Adrian.Wong@mail.utoronto.ca",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/UTSCC09/project-aja/issues"
+  },
+  "homepage": ".",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
